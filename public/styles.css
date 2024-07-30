@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  video {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .controls .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 5px;
+    flex-grow: 1;
+    margin: 0 5px;
+  }
+
+ .controls .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .controls .btn i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .controls .btn span {
+    font-size: 14px;
+  }
+  
+  .start-video i {
+    color: #28a745;
+  }
+  
+  .start-audio i {
+    color: #39da6f;
+  }
+  
+  .toggle-camera i {
+    color: #ffc107;
+  }
+  
+  .toggle-microphone i {
+    color: #dc3545;
+  }
+  
+  .end-call i {
+    color: #dc3545;
+  }
+  
+  .next i {
+    color: #ec11c8;
+  }
+  
+  .chat-container {
+    width: 100%;
+  }
+  
+  #chatMessages {
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+  }
+  
+  #messageInput {
+    width: calc(100% - 70px);
+    margin-right: 10px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #sendMessage {
+    padding: 8px 20px;
+    font-size: 14px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    border-radius: 3px;
+  }
+  
+  #sendMessage:hover {
+    background-color: #0056b3;
+  }
+  

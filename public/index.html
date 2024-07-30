@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P2P Voice & Video Call</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="big-icon">
+            <i class="fas fa-phone-volume"></i>
+            <!-- Phone icon -->
+          <style>
+            .big-icon {
+              color: #007bff; /* Replace with your desired color */
+              font-size: 5em; /* Adjust the size as needed */
+              margin-bottom: 20px; /* Example margin */
+            }
+          </style>         
+        </div>   
+
+  <div class="container">
+    <div class="video-container">
+      <video id="localVideo" autoplay muted></video>
+      <video id="remoteVideo" autoplay></video>
+    </div>
+    <div class="controls">
+      <button id="startVideoCall" class="btn start-video"><i class="fas fa-video"></i> <span>Start Video Call</span></button>
+      <button id="startAudioCall" class="btn start-audio"><i class="fas fa-phone-alt"></i> <span>Start Audio Call</span></button>
+      <button id="toggleCamera" class="btn toggle-camera"><i class="fas fa-video-slash"></i> <span>Toggle Camera</span></button>
+      <button id="toggleMicrophone" class="btn toggle-microphone"><i class="fas fa-microphone"></i> <span>Toggle Microphone</span></button>
+      <button id="endCall" class="btn end-call"><i class="fas fa-phone-slash"></i> <span>End Call</span></button>
+      <button id="next" class="btn next"><i class="fas fa-arrow-right"></i> <span>Next</span></button>
+    </div>
+    <div class="chat-container">
+      <div id="chatMessages"></div>
+      <input type="text" id="messageInput" placeholder="Type your message...">
+      <button id="sendMessage">Send</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/372bbaa53d.js" crossorigin="anonymous"></script>
+</body>
+</html>
